@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    rotate: 0; /* Reset any global rotation */
+}
+
+.square {
+    margin-top: 500px;
+    position: absolute;
+    /* Pin the top-right corner of the square to the top-right of the screen */
+    top: 0;
+    right: 0;
+
+    width: calc(100vh / sqrt(2));
+    height: calc(100vh / sqrt(2));
+    overflow: hidden;
+
+    /* Pivot the rotation around the square’s bottom-right corner */
+    transform-origin: bottom right;
+
+    /* Rotate the square 45 degrees around that corner */
+    transform: rotate(45deg);
+
+    /* Clip the square from top-left to bottom-right */
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* The heights and top positions come from your JS logic */
+}

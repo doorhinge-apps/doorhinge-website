@@ -1,0 +1,22 @@
+<div class="pageHeader">
+    <div class="headerSpacer"></div>
+    <img src="Images/logo.png" alt="DoorHinge Apps Logo" class="headerImage">
+    <h1 class="headerTitle">DoorHinge Apps</h1>
+</div>
+
+<div class="contentFullSection">
+    <div class="contentFullBody">
+        <h2 class="contentTitle">About Us</h2>
+    <p class="contentDescription">Hello everyone. We are DoorHinge apps, a pretty awesome software company. We mainly work with iOS, iPadOS, and macOS app development. Our other projects are related to website building and Android development.</p>
+    </div>
+</div>
+
+
+<mat-grid-list [cols]="gridCols" rowHeight="1:1" class="custom-grid-list">
+    <mat-grid-tile *ngFor="let item of gridItems" class="custom-grid-tile">
+        {{ item }}
+    </mat-grid-tile>
+</mat-grid-list>
+
+
+<app-gradient-lines></app-gradient-lines>

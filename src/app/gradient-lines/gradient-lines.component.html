@@ -1,0 +1,13 @@
+<div class="container">
+<div class="square">
+    <div
+      class="line"
+      *ngFor="let line of lines"
+      [style.top.%]="line.top"
+      [style.height.%]="lineThickness"
+      [style.backgroundColor]="line.color"
+    >
+    </div>
+  </div>
+</div>
+  
