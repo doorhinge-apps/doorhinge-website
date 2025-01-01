@@ -13,7 +13,7 @@ html {
 }
 
 .square {
-    margin-top: 500px;
+    margin-top: 1100px;
     position: absolute;
     /* Pin the top-right corner of the square to the top-right of the screen */
     top: 0;

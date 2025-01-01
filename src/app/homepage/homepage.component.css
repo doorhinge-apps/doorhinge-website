@@ -1,56 +1,167 @@
-
 html {
-    background-color: #B1D1FF;
-    width: 100%;
+  background-color: #B1D1FF;
+  width: 100%;
 }
 
-.pageHeader {
-    background-image: linear-gradient(#7E54FF, #A388FF, #B1D1FF);;
-    height: 100%;
+.pageHeaderExternal {
+  /* background: linear-gradient(#7E54FF, #A388FF, #B1D1FF); */
+  /* background-image: ; */
+  height: 100%;
+  width: 100%;
+}
+
+.pageHeaderExternal::before {
+  content: " ";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(#7E54FF, #A388FF, #B1D1FF);
+}
+
+.pageHeaderInternal::before {
+    content: " ";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    background: url(/Images/Grain.png);
+    background-size: cover;
     width: 100%;
+    height: 100%;
+    opacity: .2; 
+    z-index: -1;
 }
 
 @media only screen and (min-width: 650px) {
-    .headerSpacer {
-        height: 100px;
-    }
+  .headerSpacer {
+    height: 100px;
+  }
 }
+
 @media only screen and (max-width: 649px) {
-    .headerSpacer {
-        height: 150px;
-    }
+  .headerSpacer {
+    height: 150px;
+  }
 }
 
 
 .headerImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* max-width: fit-content; */
-    /* width: max(200px, 40%); */
-    /* height: min(200px, 40%); */
-    /* width: 200px; */
-    width: auto;
-    height: min(50vh, 300px);
-    max-height: 300px;
-    object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: fit-content; */
+  /* width: max(200px, 40%); */
+  /* height: min(200px, 40%); */
+  /* width: 200px; */
+  width: auto;
+  height: min(50vh, 300px);
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .headerTitle {
-    text-align: center;
-    font-size: 8vw;
-    color: white;
-    font-weight: bold;
-    font-family: 'Arial Black', 'Arial Bold', Helvetica, Gadget, sans-serif;
+  text-align: center;
+  font-size: 8vw;
+  color: white;
+  font-weight: bold;
+  font-family: 'Arial Black', 'Arial Bold', Helvetica, Gadget, sans-serif;
 }
 
 .contentFullSection {
-    backdrop-filter: blur(20px);
-    box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 10px;
-    margin: 20px;
-    border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 10px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .contentFullBody {
-    padding: 20px;
+  padding: 20px;
+}
+
+.stupidLines {
+  z-index: 0;
+}
+
+.customGridList {
+  z-index: 10;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  row-gap: 75px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+}
+
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Light translucent background */
+  backdrop-filter: blur(20px);
+  /* Adds the blur effect */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  /* Shadow around each item */
+  border-radius: 20px;
+  text-align: left;
+}
+
+.tile-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  /* Centers the image */
+}
+
+h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Make all items in a row have the same height */
+.grid-container {
+  align-items: stretch;
+}
+
+.grid-item {
+  height: 100%;
+  /* Ensures tiles grow equally */
+}
+
+div {
+  z-index: 10;
+}
+
+.appTitle {
+  color: white;
+  font-size: xx-large;
+  font-family: 'Arial Black', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #8F6BFF;
+}
+
+.tileImage {
+  /* width: 200px; */
+  scale: 80%;
 }

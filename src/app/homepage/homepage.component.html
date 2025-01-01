@@ -1,22 +1,71 @@
-<div class="pageHeader">
+<div class="pageHeaderExternal">
+    <div class="pageHeaderInternal">
     <div class="headerSpacer"></div>
     <img src="Images/logo.png" alt="DoorHinge Apps Logo" class="headerImage">
     <h1 class="headerTitle">DoorHinge Apps</h1>
+</div>
 </div>
 
 <div class="contentFullSection">
     <div class="contentFullBody">
         <h2 class="contentTitle">About Us</h2>
-    <p class="contentDescription">Hello everyone. We are DoorHinge apps, a pretty awesome software company. We mainly work with iOS, iPadOS, and macOS app development. Our other projects are related to website building and Android development.</p>
+        <p class="contentDescription">Hello everyone. We are DoorHinge apps, a pretty awesome software company. We
+            mainly work with iOS, iPadOS, and macOS app development. Our other projects are related to website building
+            and Android development.</p>
     </div>
 </div>
 
 
-<mat-grid-list [cols]="gridCols" rowHeight="1:1" class="custom-grid-list">
-    <mat-grid-tile *ngFor="let item of gridItems" class="custom-grid-tile">
-        {{ item }}
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="grid-container">
+    <div class="grid-item">
+        <h2>Our Apps</h2>
+    </div>
+    <div class="grid-item">
+        <h3 class="appTitle">Aura Browser</h3>
+        <img src="Images/App Icons/Aura.png" alt="Aura Browser Placeholder" class="tileImage">
+        <p>Aura is a web browser designed for iPad with additional support for iPhone, Mac, and Vision Pro. The app is
+            designed as a customizable and open source alternative to Arc browser. The browser is currently available in
+            beta. You can view the code and contribute on GitHub.</p>
+
+        <button>Join Beta</button>
+        <button>Learn More</button>
+    </div>
+    <div class="grid-item">
+        <h3 class="appTitle">DH Chat</h3>
+        <img src="Images/App Icons/DH Chat.png" alt="DH Chat Placeholder" class="tileImage">
+        <p>DH Chat is a messaging platform for groups. Our focus with this app was to create a more powerful alternative
+            to GroupMe that maintains simplicity. It is essentially in between GroupMe and Discord. It is not available
+            yet. When it is released, it will support iOS, Android, and Web.</p>
+
+        <button>Get Notified</button>
+        <button>Learn More</button>
+    </div>
+    <div class="grid-item">
+        <h3 class="appTitle">SF Folder Icons</h3>
+        <img src="Images/App Icons/SF Folders.png" alt="SF Folder Icons Placeholder" class="tileImage">
+        <p>This is one of our simpler apps. It allows you to customize the folder icons on your Mac...</p>
+
+        <button>Download</button>
+        <button>Learn More</button>
+    </div>
+    <div class="grid-item">
+        <h3 class="appTitle">CelsiUSA</h3>
+        <img src="Images/App Icons/CelsiUSA.png" alt="CelsiUSA Placeholder" class="tileImage">
+        <p>CelsiUSA is our app to help you switch from Fahrenheit to Celsius...</p>
+
+        <button>Download</button>
+        <button>Learn More</button>
+    </div>
+    <div class="grid-item">
+        <h3 class="appTitle">DH Parkour</h3>
+        <img src="Images/App Icons/DH Parkour.png" alt="DH Parkour Placeholder" class="tileImage">
+        <p>DoorHinge Parkour is our first app we developed. It is designed to teach you parkour...</p>
+
+        <button>Download</button>
+        <button>Learn More</button>
+    </div>
+</div>
 
 
-<app-gradient-lines></app-gradient-lines>
+
+<app-gradient-lines class="stupidLines"></app-gradient-lines>
