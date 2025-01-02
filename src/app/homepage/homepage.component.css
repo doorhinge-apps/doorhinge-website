@@ -79,10 +79,17 @@ html {
 }
 
 .contentFullBody {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 2px;
 }
 
 .stupidLines {
+  z-index: 0;
+}
+
+.stupidCircles {
   z-index: 0;
 }
 
@@ -161,7 +168,50 @@ div {
   -webkit-text-stroke-color: #8F6BFF;
 }
 
+.appDescription {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
 .tileImage {
   /* width: 200px; */
   scale: 80%;
+}
+
+.contentTitle {
+    color: white;
+  font-size: xx-large;
+  font-family: 'Arial Black', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #8F6BFF;
+}
+
+.contentDescription {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: larger;
+}
+
+.oneAction {
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* background: linear-gradient(90deg, #D2C4FF, #FFB7FD); */
+  background: linear-gradient(90deg, #A388FF80, #FF6EFA80);
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 800ms ease;
+  box-shadow: inset 0 0 10px #ffffff;
+}
+
+.oneAction:hover {
+  /* opacity: 0.5; */
+  box-shadow: inset 0 0 10px #00000080;
+  border-radius: 100px;
 }

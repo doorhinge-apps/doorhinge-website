@@ -1,19 +1,23 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 html {
-    rotate: 0; /* Reset any global rotation */
+    rotate: 0;
+    /* Reset any global rotation */
 }
 
 .square {
-    margin-top: 1100px;
+    /* margin-top: 1100px; */
+    margin-top: 150vh;
     position: absolute;
     /* Pin the top-right corner of the square to the top-right of the screen */
     top: 0;

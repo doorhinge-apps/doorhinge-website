@@ -1,0 +1,8 @@
+<div class="containerCircles" [ngStyle]="getContainerStyle()">
+    <div
+      *ngFor="let circle of circles"
+      class="circle"
+      [ngStyle]="getCircleStyle(circle)"
+    ></div>
+  </div>
+  

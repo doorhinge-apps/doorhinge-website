@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.circle {
+  position: absolute;
+  /* The same gradient and border settings */
+  background: linear-gradient(#B1D1FF, #B1D1FF) padding-box,
+              linear-gradient(0deg, #FF6EFA, #A388FF) border-box;
+  border-radius: 50em;
+  border: 20px solid transparent;
+
+  /* Diameter is the height of the viewport */
+  width: 100vh;
+  height: 100vh;
+
+  /* Center vertically, align the circle's center with the left edge */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Only show the right half of the circle */
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.containerCircles {
+    /* margin-top: 1500px; */
+    margin-top: 200vh;
+    scale: 120%;
+}

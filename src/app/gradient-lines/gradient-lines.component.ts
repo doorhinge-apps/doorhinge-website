@@ -27,7 +27,7 @@ export class GradientLinesComponent implements OnInit, OnDestroy {
    * Pixel speed (how many “percentage‐units” the lines move per animation frame).  
    * Adjust or make more sophisticated to control actual velocity over time.
    */
-  @Input() speed = 0.05; 
+  @Input() speed = 0.08; 
 
   /** All the active lines currently on screen (and possibly above/below). */
   lines: Line[] = [];

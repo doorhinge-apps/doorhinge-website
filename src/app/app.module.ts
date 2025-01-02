@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { OurAppsComponent } from './our-apps/our-apps.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { GradientLinesComponent } from './gradient-lines/gradient-lines.component';
+import { CirclesGradientComponent } from './circles-gradient/circles-gradient.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GradientLinesComponent } from './gradient-lines/gradient-lines.componen
     ContactComponent,
     AboutComponent,
     OurAppsComponent,
-    GradientLinesComponent
+    GradientLinesComponent,
+    CirclesGradientComponent
   ],
   imports: [
     BrowserModule,
