@@ -1,9 +1,14 @@
-body, html {
+/* body, html {
     overflow-x: hidden;
-    }
+    } */
 
 html {
     background-color: #B1D1FF;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.siteWrapper {
     width: 100%;
     overflow-x: hidden;
 }
