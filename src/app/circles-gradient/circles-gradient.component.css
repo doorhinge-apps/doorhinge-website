@@ -19,25 +19,19 @@ body {
 }
 
 .circle {
-  position: absolute;
-  /* The same gradient and border settings */
-  background: linear-gradient(#B1D1FF, #B1D1FF) padding-box,
-              linear-gradient(0deg, #FF6EFA, #A388FF) border-box;
-  border-radius: 50em;
-  border: 20px solid transparent;
-
-  /* Diameter is the height of the viewport */
-  width: 100vh;
-  height: 100vh;
-
-  /* Center vertically, align the circle's center with the left edge */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  /* Only show the right half of the circle */
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-}
+    position: absolute;
+    background: linear-gradient(#B1D1FF, #B1D1FF) padding-box,
+                linear-gradient(0deg, #FF6EFA, #A388FF) border-box;
+    border-radius: 50em;
+    border:15px solid transparent;
+    /* remove width: 100vh; height: 100vh; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Only show the right half of whatever size it becomes: */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+  
 .containerCircles {
     /* margin-top: 1500px; */
     margin-top: 200vh;

@@ -11,7 +11,7 @@ interface Circle {
 })
 export class CirclesGradientComponent implements OnInit, OnDestroy {
   @Input() circleSize: number = 30; // Diameter of each circle
-  @Input() circleGap: number = 30; // Gap between circles
+  @Input() circleGap: number = 40; // Gap between circles
   @Input() growthRate: number = 2; // Growth rate in pixels per frame
   @Input() animationSpeed: number = 0.2; // Multiplier for the animation speed
 
