@@ -13,6 +13,7 @@ import { OurAppsComponent } from './our-apps/our-apps.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { GradientLinesComponent } from './gradient-lines/gradient-lines.component';
 import { CirclesGradientComponent } from './circles-gradient/circles-gradient.component';
+import { SpacerComponent } from './spacer/spacer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CirclesGradientComponent } from './circles-gradient/circles-gradient.co
     AboutComponent,
     OurAppsComponent,
     GradientLinesComponent,
-    CirclesGradientComponent
+    CirclesGradientComponent,
+    SpacerComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { CirclesGradientComponent } from './circles-gradient/circles-gradient.co
   providers: [
     provideAnimationsAsync()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [SpacerComponent]
 })
 export class AppModule { }
