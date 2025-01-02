@@ -16,7 +16,7 @@ html {
   top: 0; 
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   background: linear-gradient(#7E54FF, #A388FF, #B1D1FF);
 }
@@ -31,7 +31,7 @@ html {
     background: url(/Images/Grain.png);
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     opacity: .2; 
     z-index: -1;
 }
