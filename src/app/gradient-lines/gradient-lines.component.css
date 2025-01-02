@@ -17,13 +17,15 @@ html {
 
 @media only screen and (min-width: 650px) {
     .square {
-        margin-top: 150vh;
+        /* margin-top: 150vh; */
+        margin-top: 1100px;
     }
 }
 
 @media only screen and (max-width: 649px) {
     .square {
-        margin-top: 200vh;
+        /* margin-top: 200vh; */
+        margin-top: 1500px;
     }
 }
 
