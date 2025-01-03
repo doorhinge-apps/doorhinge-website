@@ -12,9 +12,10 @@ interface Line {
 }
 
 @Component({
-  selector: 'app-gradient-lines',
-  templateUrl: './gradient-lines.component.html',
-  styleUrls: ['./gradient-lines.component.scss']
+    selector: 'app-gradient-lines',
+    templateUrl: './gradient-lines.component.html',
+    styleUrls: ['./gradient-lines.component.scss'],
+    standalone: false
 })
 export class GradientLinesComponent implements OnInit, OnDestroy {
   /** Number of “stops” in one half of the gradient (pink->purple or purple->pink) */

@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-scrolling-apps',
-  templateUrl: './scrolling-apps.component.html',
-  styleUrls: ['./scrolling-apps.component.css']
+    selector: 'app-scrolling-apps',
+    templateUrl: './scrolling-apps.component.html',
+    styleUrls: ['./scrolling-apps.component.css'],
+    standalone: false
 })
 export class ScrollingAppsComponent implements OnInit {
 

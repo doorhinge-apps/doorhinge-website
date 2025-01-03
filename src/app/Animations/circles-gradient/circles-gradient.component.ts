@@ -5,9 +5,10 @@ interface Circle {
 }
 
 @Component({
-  selector: 'app-circles-gradient',
-  templateUrl: './circles-gradient.component.html',
-  styleUrls: ['./circles-gradient.component.css']
+    selector: 'app-circles-gradient',
+    templateUrl: './circles-gradient.component.html',
+    styleUrls: ['./circles-gradient.component.css'],
+    standalone: false
 })
 export class CirclesGradientComponent implements OnInit, OnDestroy {
   @Input() circleSize: number = 30; // Diameter of each circle

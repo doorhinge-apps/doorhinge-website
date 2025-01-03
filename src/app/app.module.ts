@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +16,8 @@ import { SpacerComponent } from './spacer/spacer.component';
 import { ScrollingAppsComponent } from './Animations/scrolling-apps/scrolling-apps.component';
 import { ScrollingAppsContainerComponent } from './Animations/scrolling-apps-container/scrolling-apps-container.component';
 import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffolders-privacy.component';
+import { DropdownModule } from '@coreui/angular';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatGridListModule
+    DropdownModule
   ],
   providers: [
     provideAnimationsAsync()

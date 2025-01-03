@@ -59,10 +59,20 @@
                 also upload your own images to create custom folder designs. It is available on the App Store for $0.99
                 or on GitHub for free.</p>
 
-            <div class="actionButtons">
-                <a routerLink="/"  class="oneAction">Download</a>
-                <a routerLink="/sf-folders"  class="oneAction">Learn More</a>
-            </div>
+                <div class="actionButtons">
+                    <div class="dropdown-container" #dropdown>
+                        <button class="oneAction dropdown-toggle" (click)="toggleDropdown($event)">
+                          Download
+                        </button>
+                        <ul class="dropdown-menu" [class.show]="isOpen">
+                          <li><a class="dropdown-item" href="https://apps.apple.com/us/app/sf-symbols-folders/id6739956900">App Store</a></li>
+                          <li><a class="dropdown-item" href="https://github.com/CaedmonMyers/SF-Symbols-Folders/releases/latest">GitHub</a></li>
+                        </ul>
+                      </div>
+                  
+                    <a routerLink="/sf-folders" class="oneAction">Learn More</a>
+                  </div>
+                                                    
         </div>
         <div class="grid-item">
             <h3 class="appTitle">CelsiUSA</h3>
