@@ -136,6 +136,7 @@ html {
   /* Shadow around each item */
   border-radius: 20px;
   text-align: left;
+  min-height: 600px;
 }
 
 
