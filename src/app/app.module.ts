@@ -11,12 +11,12 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { OurAppsComponent } from './our-apps/our-apps.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { GradientLinesComponent } from './gradient-lines/gradient-lines.component';
-import { CirclesGradientComponent } from './circles-gradient/circles-gradient.component';
+import { GradientLinesComponent } from './Animations/gradient-lines/gradient-lines.component';
+import { CirclesGradientComponent } from './Animations/circles-gradient/circles-gradient.component';
 import { SpacerComponent } from './spacer/spacer.component';
-import { ScrollingAppsComponent } from './scrolling-apps/scrolling-apps.component';
-import { ScrollingAppsContainerComponent } from './scrolling-apps-container/scrolling-apps-container.component';
-import { SffoldersPrivacyComponent } from './sffolders-privacy/sffolders-privacy.component';
+import { ScrollingAppsComponent } from './Animations/scrolling-apps/scrolling-apps.component';
+import { ScrollingAppsContainerComponent } from './Animations/scrolling-apps-container/scrolling-apps-container.component';
+import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffolders-privacy.component';
 
 @NgModule({
   declarations: [
