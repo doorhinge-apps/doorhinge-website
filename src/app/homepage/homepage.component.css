@@ -68,16 +68,16 @@ html {
   font-size: 8vw;
   color: white;
   font-weight: bold;
-  font-family: 'Arial Black', 'Arial Bold', Helvetica, Gadget, sans-serif;
+  font-family: 'Helvetica Black', 'Arial Black', 'Arial Bold', Helvetica, Gadget, sans-serif;
 }
 
 .contentFullSection {
   position: relative;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 10px;
   margin: 20px;
   border-radius: 20px;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .contentFullBody {
@@ -115,13 +115,67 @@ html {
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   /* Light translucent background */
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   /* Adds the blur effect */
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
   /* Shadow around each item */
   border-radius: 20px;
   text-align: left;
 }
+
+.grid-item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 20px; */
+  background: rgba(255, 255, 255, 0.1);
+  /* Light translucent background */
+  backdrop-filter: blur(15px);
+  /* Adds the blur effect */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  /* Shadow around each item */
+  border-radius: 20px;
+  text-align: left;
+}
+
+
+
+/* .scrollingApps {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 1;
+} */
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 5px 5px #00000080;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 20px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.scrollingApps {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  overflow: auto;
+}
+
 
 .tile-image {
   width: 100px;
@@ -140,7 +194,7 @@ p {
   margin: 10px 0;
 }
 
-button {
+.oneAction {
   margin: 5px;
   padding: 8px 12px;
   font-size: 14px;
@@ -157,6 +211,10 @@ button {
   /* Ensures tiles grow equally */
 }
 
+.grid-item2 {
+  height: calc(100% + 40px);
+}
+
 div {
   z-index: 10;
 }
@@ -164,9 +222,9 @@ div {
 .appTitle {
   color: white;
   font-size: xx-large;
-  font-family: 'Arial Black', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Black', 'Arial Black', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #8F6BFF;
 }
 
@@ -185,9 +243,9 @@ div {
 .contentTitle {
     color: white;
   font-size: xx-large;
-  font-family: 'Arial Black', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Black', 'Arial Black', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #8F6BFF;
 }
 
@@ -195,7 +253,16 @@ div {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   font-size: larger;
+  font-weight: bold;
 }
+
+.oneAction {
+  display: inline-block; /* Ensures proper box model for height and width */
+  text-decoration: none; /* Removes underline */
+  text-align: center; /* Centers text */
+  line-height: 30px; /* Adjust based on height for vertical alignment */
+}
+
 
 .oneAction {
   width: calc(50% - 10px);
@@ -219,5 +286,5 @@ div {
 }
 
 .mainBody {
-  z-index: 100;
+  z-index: 10;
 }

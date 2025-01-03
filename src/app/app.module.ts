@@ -14,6 +14,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { GradientLinesComponent } from './gradient-lines/gradient-lines.component';
 import { CirclesGradientComponent } from './circles-gradient/circles-gradient.component';
 import { SpacerComponent } from './spacer/spacer.component';
+import { ScrollingAppsComponent } from './scrolling-apps/scrolling-apps.component';
+import { ScrollingAppsContainerComponent } from './scrolling-apps-container/scrolling-apps-container.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SpacerComponent } from './spacer/spacer.component';
     OurAppsComponent,
     GradientLinesComponent,
     CirclesGradientComponent,
-    SpacerComponent
+    SpacerComponent,
+    ScrollingAppsComponent,
+    ScrollingAppsContainerComponent
   ],
   imports: [
     BrowserModule,
