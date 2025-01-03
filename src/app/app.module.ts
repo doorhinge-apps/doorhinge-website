@@ -16,6 +16,7 @@ import { CirclesGradientComponent } from './circles-gradient/circles-gradient.co
 import { SpacerComponent } from './spacer/spacer.component';
 import { ScrollingAppsComponent } from './scrolling-apps/scrolling-apps.component';
 import { ScrollingAppsContainerComponent } from './scrolling-apps-container/scrolling-apps-container.component';
+import { SffoldersPrivacyComponent } from './sffolders-privacy/sffolders-privacy.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ScrollingAppsContainerComponent } from './scrolling-apps-container/scro
     CirclesGradientComponent,
     SpacerComponent,
     ScrollingAppsComponent,
-    ScrollingAppsContainerComponent
+    ScrollingAppsContainerComponent,
+    SffoldersPrivacyComponent
   ],
   imports: [
     BrowserModule,
