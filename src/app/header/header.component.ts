@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.setupActiveMenuHighlight();
+    this.closeMenuOnNavigation();
   }
 
   private setupActiveMenuHighlight(): void {
@@ -34,6 +35,17 @@ export class HeaderComponent implements OnInit {
           item.classList.remove('active');
         }
       });
+    });
+  }
+
+  private closeMenuOnNavigation(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement;
+      if (menuToggle && menuToggle.checked) {
+        menuToggle.checked = false;
+      }
     });
   }
 }
