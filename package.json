@@ -4,7 +4,8 @@
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx ng build"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +20,11 @@
     "@angular/platform-browser-dynamic": "18.2.13",
     "@angular/router": "18.2.13",
     "@coreui/angular": "^5.2.25",
-    "@coreui/coreui": "^5.2.0"
+    "@coreui/coreui": "^5.2.0",
+    "vercel": "^39.2.5"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "18.2.12"
+    "@angular-devkit/build-angular": "18.2.12",
+    "@angular/cli": "^19.0.6"
   }
 }
