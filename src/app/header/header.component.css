@@ -106,9 +106,9 @@
     }
 
     .menuImage:hover {
-        background-color: #00000066;
+        background-color: #FFFFFF66;
         /* background-color: #5A770080; */
-        filter: invert(1);
+        /* filter: invert(1); */
     }
 }
 
@@ -123,11 +123,13 @@
     }
 
     .headerImage {
-        border-radius: 100px;
+        border-radius: 15px;
         border-color: white;
-        border-style: solid;
+        padding: 10px;
+        padding-left: 12px;
+        border-style: none;
         border-width: 3px;
-        background-color: rgb(255, 255, 255, 0.4);
+        background-color: rgb(255, 255, 255);
         height: 50px;
         width: 50px;
         transition: rotate 100s ease-in-out;
@@ -154,12 +156,12 @@
     }
 
     .menuImage:hover {
-        background-color: #5A770080;
-        filter: invert(1);
+        background-color: #FFFFFF66;
+        /* filter: invert(1); */
     }
 
     .headerImage:hover {
-        rotate: -360000deg;
+        /* rotate: -360000deg; */
     }
 
     .headerImageContainer {

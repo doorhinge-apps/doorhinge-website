@@ -21,6 +21,8 @@
     "@angular/router": "18.2.13",
     "@coreui/angular": "^5.2.25",
     "@coreui/coreui": "^5.2.0",
+    "@types/snapsvg": "^0.5.8",
+    "snapsvg": "^0.5.1",
     "vercel": "^39.2.5"
   },
   "devDependencies": {

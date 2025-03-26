@@ -18,7 +18,8 @@ import { ScrollingAppsComponent } from './Animations/scrolling-apps/scrolling-ap
 import { ScrollingAppsContainerComponent } from './Animations/scrolling-apps-container/scrolling-apps-container.component';
 import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffolders-privacy.component';
 import { DropdownModule } from '@coreui/angular';
-
+import { HttpClientModule } from '@angular/common/http';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,15 @@ import { DropdownModule } from '@coreui/angular';
     SpacerComponent,
     ScrollingAppsComponent,
     ScrollingAppsContainerComponent,
-    SffoldersPrivacyComponent
+    SffoldersPrivacyComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DropdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
