@@ -1,32 +1,32 @@
 {
-  "name": "doorhinge-website",
-  "version": "1.0.0",
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx ng build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@angular/animations": "^18.2.13",
-    "@angular/common": "18.2.13",
-    "@angular/compiler": "18.2.13",
-    "@angular/core": "18.2.13",
-    "@angular/forms": "18.2.13",
-    "@angular/platform-browser": "18.2.13",
-    "@angular/platform-browser-dynamic": "18.2.13",
-    "@angular/router": "18.2.13",
-    "@coreui/angular": "^5.2.25",
-    "@coreui/coreui": "^5.2.0",
-    "@types/snapsvg": "^0.5.8",
-    "snapsvg": "^0.5.1",
-    "vercel": "^39.2.5"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "18.2.12",
-    "@angular/cli": "^19.0.6"
-  }
+    "name": "doorhinge-website",
+    "version": "1.0.0",
+    "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx ng build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@angular/animations": "^18.2.13",
+        "@angular/common": "18.2.13",
+        "@angular/compiler": "18.2.13",
+        "@angular/core": "18.2.13",
+        "@angular/forms": "18.2.13",
+        "@angular/platform-browser": "18.2.13",
+        "@angular/platform-browser-dynamic": "18.2.13",
+        "@angular/router": "18.2.13",
+        "@coreui/angular": "^5.2.25",
+        "@coreui/coreui": "^5.2.0",
+        "@types/snapsvg": "^0.5.8",
+        "snapsvg": "^0.5.1",
+        "vercel": "^39.2.5"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "18.2.12",
+        "@angular/cli": "^19.0.6"
+    }
 }

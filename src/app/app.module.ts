@@ -20,35 +20,35 @@ import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffo
 import { DropdownModule } from '@coreui/angular';
 import { HttpClientModule } from '@angular/common/http';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { AuraComponent } from './our-apps/aura/aura.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    HeaderComponent,
-    FooterComponent,
-    ContactComponent,
-    AboutComponent,
-    OurAppsComponent,
-    GradientLinesComponent,
-    CirclesGradientComponent,
-    SpacerComponent,
-    ScrollingAppsComponent,
-    ScrollingAppsContainerComponent,
-    SffoldersPrivacyComponent,
-    PrivacyComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    DropdownModule,
-    BrowserAnimationsModule,
-    HttpClientModule
-  ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent],
-  exports: [SpacerComponent]
+    declarations: [
+        AppComponent,
+        HomepageComponent,
+        HeaderComponent,
+        FooterComponent,
+        ContactComponent,
+        AboutComponent,
+        OurAppsComponent,
+        GradientLinesComponent,
+        CirclesGradientComponent,
+        SpacerComponent,
+        ScrollingAppsComponent,
+        ScrollingAppsContainerComponent,
+        SffoldersPrivacyComponent,
+        PrivacyComponent,
+        AuraComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        DropdownModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+    ],
+    providers: [provideAnimationsAsync()],
+    bootstrap: [AppComponent],
+    exports: [SpacerComponent],
 })
-export class AppModule { }
+export class AppModule {}

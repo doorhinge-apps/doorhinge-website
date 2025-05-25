@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Helvetica Black';
+    font-family: "Helvetica Black";
     src: url(/Fonts/helveticablackoriginal_bold.otf) format("opentype");
 }
 
 html {
-    background-color: #B1D1FF;
+    background-color: #b1d1ff;
     width: 100%;
     overflow-x: hidden;
 }
@@ -30,5 +30,11 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
     selector: 'app-scrolling-apps-container',
     templateUrl: './scrolling-apps-container.component.html',
     styleUrl: './scrolling-apps-container.component.css',
-    standalone: false
+    standalone: false,
 })
-export class ScrollingAppsContainerComponent {
-
-}
+export class ScrollingAppsContainerComponent {}

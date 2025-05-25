@@ -8,16 +8,20 @@ import { ScrollingAppsContainerComponent } from './Animations/scrolling-apps-con
 import { SffoldersPrivacyComponent } from './Privacy Info/sffolders-privacy/sffolders-privacy.component';
 import { ContactComponent } from './contact/contact.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { AuraComponent } from './our-apps/aura/aura.component';
+import { OurAppsComponent } from './our-apps/our-apps.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'animation', component: ScrollingAppsContainerComponent },
-  { path: 'sf-folders-privacy', component: SffoldersPrivacyComponent },
-  { path: 'privacy', component: PrivacyComponent },
+    { path: '', component: HomepageComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'animation', component: ScrollingAppsContainerComponent },
+    { path: 'sf-folders-privacy', component: SffoldersPrivacyComponent },
+    { path: 'privacy', component: PrivacyComponent },
+    { path: 'apps', component: OurAppsComponent },
+    { path: 'apps/aura', component: AuraComponent },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

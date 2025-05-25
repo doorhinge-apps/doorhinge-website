@@ -1,37 +1,37 @@
 .scroller-container {
     position: relative;
-    width: 100px;         /* Icon width */
-    height: 800px;        /* Visible area - adjust as you see fit */
-    overflow: hidden;     /* Hide everything outside the container */
-  }
-  
-  .scroll-content {
+    width: 100px; /* Icon width */
+    height: 800px; /* Visible area - adjust as you see fit */
+    overflow: hidden; /* Hide everything outside the container */
+}
+
+.scroll-content {
     display: flex;
     flex-direction: column;
     animation: scrollUp var(--scroll-duration) linear infinite;
-  }
-  
-  .scroll-content img {
-    width: 100px;         /* Same as container width */
-    height: 100px;        /* itemHeight in the TS file */
+}
+
+.scroll-content img {
+    width: 100px; /* Same as container width */
+    height: 100px; /* itemHeight in the TS file */
     object-fit: cover;
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-  
-  /* The marquee keyframes */
-  @keyframes scrollUp {
+    border-radius: 30px;
+}
+
+/* The marquee keyframes */
+@keyframes scrollUp {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     100% {
-      /*
+        /*
         Only move up by the 'single cycle' distance.
         Because repeatedImages contains 4 cycles,
         moving by one cycle lands us at the
         beginning of the next identical cycle.
       */
-      transform: translateY(calc(-1 * var(--scroll-distance)));
+        transform: translateY(calc(-1 * var(--scroll-distance)));
     }
-  }
-  
+}

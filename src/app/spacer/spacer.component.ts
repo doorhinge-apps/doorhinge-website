@@ -4,8 +4,8 @@ import { Component, Input } from '@angular/core';
     selector: 'app-spacer',
     templateUrl: './spacer.component.html',
     styleUrls: ['./spacer.component.css'],
-    standalone: false
+    standalone: false,
 })
 export class SpacerComponent {
-  @Input() space: number = 0;
+    @Input() space: number = 0;
 }

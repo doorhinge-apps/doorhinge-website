@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Neonderthaw&display=swap");
+
+@keyframes textGlow {
+    0% {
+        text-shadow: white 0px 0 30px;
+    }
+
+    50% {
+        text-shadow: white 0px 0 0px;
+    }
+
+    100% {
+        text-shadow: white 0px 0 30px;
+    }
+}
+
+.neonderthaw-regular {
+    display: block;
+    position: fixed;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 10vw;
+    color: white;
+    /* text-shadow: white 1px 0 10px; */
+    animation: textGlow forwards 4s infinite;
+    animation-timing-function: linear;
+}
+
+.mainContent {
+    position: relative;
+    background-color: #d0b1f9;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* margin-top:-70px;  ⟵  delete this */
+    background: #d0b1f9;
+}
+
+.section + .section {
+    /* mild overlap, no scrollbar side-effects */
+    margin-top: -70px;
+}
+
+.fossilOverlay,
+.fossilOverlay img {
+    max-width: 100vw;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* safety net */
+}
+
+.fixedOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scrolling-image {
+    width: 100%;
+    max-width: 600px;
+    object-fit: contain;
+}
+
+.scrollingFossil {
+    width: 90%;
+    object-fit: contain;
+}
+
+.bottom {
+    width: 100%;
+    min-height: 200px;
+    background-color: #d0b1f9;
+}
+
+.blurCircle {
+    display: block;
+    position: absolute;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 70vh;
+    height: 30vw;
+    width: 80vw;
+    background-color: #86bef9;
+    border-radius: 50%;
+    filter: blur(150px);
+}
+
+.blurCircleImage {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 80vw;
+    height: 30vw;
+}
+
+.noise {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+}
+
+.horizontalContent {
+    margin-top: 20vh;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.auraImage {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.sectionTitle {
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: white;
+}

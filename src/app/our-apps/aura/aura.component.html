@@ -1,0 +1,53 @@
+<div class="mainContent">
+    <ng-container *ngFor="let s of sections; let i = index">
+        <section
+            class="section"
+            [style.background]="
+                'linear-gradient(to bottom,' +
+                s.colors[0] +
+                ',' +
+                s.colors[1] +
+                ')'
+            "
+            [style.height]="s.height"
+            [style.clip-path]="s.clipPath"
+            [style.z-index]="100 - i"
+        >
+            <div *ngIf="i === 0" class="fixedOverlay">
+                <div class="image-container"></div>
+            </div>
+
+            <div *ngIf="i === 0" class="fossilOverlay">
+                <!-- fourth section fossil overlay -->
+                <div class="blurCircle"></div>
+                <!-- <img src="/Images/Noise Circle.png" class="blurCircleImage"> -->
+                <img src="/Images/Grain.png" class="noise" />
+
+                <h1 class="neonderthaw-regular">Aura Browser</h1>
+            </div>
+
+            <div *ngIf="i === 1" class="fossilOverlay">
+                <!-- fourth section fossil overlay -->
+                <div class="horizontalContent">
+                    <img
+                        src="/Images/Screenshots/Aura iPad.png"
+                        class="auraImage"
+                    />
+
+                    <div>
+                        <h2 class="sectionTitle">Meet Aura</h2>
+                        <p>
+                            Aura is a browser designed for iPad, iPhone, Mac,
+                            and Vision Pro. However, our main focus is bringing
+                            a productive browsing experience to iPad. We do this
+                            by bringing features from desktop browsers to your
+                            iPad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </ng-container>
+
+    <div class="bottom"></div>
+</div>

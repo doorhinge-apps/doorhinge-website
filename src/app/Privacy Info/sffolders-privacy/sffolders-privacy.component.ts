@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
     selector: 'app-sffolders-privacy',
     templateUrl: './sffolders-privacy.component.html',
     styleUrl: './sffolders-privacy.component.css',
-    standalone: false
+    standalone: false,
 })
-export class SffoldersPrivacyComponent {
-
-}
+export class SffoldersPrivacyComponent {}

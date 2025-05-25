@@ -20,27 +20,27 @@ body {
 
 /* Host as a full-viewport or page overlay */
 :host {
-    position: absolute;     /* or absolute if you prefer it to scroll with content */
+    position: absolute; /* or absolute if you prefer it to scroll with content */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;         /* behind everything else */
+    z-index: -1; /* behind everything else */
     pointer-events: none; /* so you can’t accidentally click the circles */
-  }
-  
-  /* Remove any top margin on the container so it does not push content */
-  .containerCircles {
+}
+
+/* Remove any top margin on the container so it does not push content */
+.containerCircles {
     /* margin-top: 0 !important; */
     position: relative; /* or keep it as-is if you want each circle absolutely within. */
-    scale: 120%;        /* if you still want to scale it */
-  }
-  
+    scale: 120%; /* if you still want to scale it */
+}
 
 .circle {
     position: absolute;
-    background: linear-gradient(#B1D1FF, #B1D1FF) padding-box,
-        linear-gradient(0deg, #FF6EFA, #A388FF) border-box;
+    background:
+        linear-gradient(#b1d1ff, #b1d1ff) padding-box,
+        linear-gradient(0deg, #ff6efa, #a388ff) border-box;
     border-radius: 50em;
     border: 15px solid transparent;
     /* remove width: 100vh; height: 100vh; */

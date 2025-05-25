@@ -1,58 +1,58 @@
 /* Header styling - Updated */
 app-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 60px; /* Define header height */
-  margin: 0; /* Remove any external margin */
-  padding: 0; /* Remove padding */
-  display: flex; /* Ensures proper alignment */
-  justify-content: center; /* Center content */
-  background-color: transparent; /* Remove default white background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px; /* Define header height */
+    margin: 0; /* Remove any external margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Ensures proper alignment */
+    justify-content: center; /* Center content */
+    background-color: transparent; /* Remove default white background */
 }
 
 /* Inner container for the actual header */
 app-header .top-nav {
-  width: fit-content; /* Restrict width to content */
-  backdrop-filter: blur(40px);
-  box-shadow: 0px 0px 10px #00000080;
-  margin: 10px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent white */
+    width: fit-content; /* Restrict width to content */
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 10px #00000080;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent white */
 }
 
 /* Footer styling remains unchanged */
 app-footer {
-  text-align: center;
-  background-color: white;
-  /* padding: 10px 0; */
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    /* padding: 10px 0; */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Wrapper for content to allow scrolling and ignore header */
 .content-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
 }
 
 /* Ensure router outlet content scrolls under the header */
 router-outlet {
-  flex: 1;
-  display: block;
-  margin: 0;
-  padding: 0;
+    flex: 1;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body adjustments */
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }

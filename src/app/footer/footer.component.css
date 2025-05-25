@@ -33,7 +33,7 @@
     padding: 20px;
     padding-top: 30px;
     text-decoration: underline;
-    color: #8F6BFF;
+    color: #8f6bff;
     font-size: 16pt;
 }
 
@@ -51,8 +51,8 @@ h4 {
     color: white;
     font-size: 60px;
     margin: 20px;
-    font-family: 'Helvetica Black', 'Arial Black', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Black", "Arial Black", Helvetica, Arial, sans-serif;
     font-weight: bold;
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #8F6BFF;
+    -webkit-text-stroke-color: #8f6bff;
 }

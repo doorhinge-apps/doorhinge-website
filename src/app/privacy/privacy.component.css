@@ -10,11 +10,11 @@ body {
 
 h1,
 h2,
-h3{
+h3 {
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
     color: #fff;
-    -webkit-text-stroke: 1px #A388FF;
+    -webkit-text-stroke: 1px #a388ff;
     text-shadow: #3b2a75 0px 0px 2px;
 }
 
@@ -23,13 +23,12 @@ h3{
     /* box-shadow: 0 0 8px 8px #B1D1FF inset; */
 }
 
-
 strong {
     color: #fff;
 }
 
 a {
-    color: #007BFF;
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -38,24 +37,24 @@ a:hover {
 }
 
 .gif {
-  display: block;
-  width: min(90vw, 700px);
-  height: min(90vw, 700px);
+    display: block;
+    width: min(90vw, 700px);
+    height: min(90vw, 700px);
 
-  /* Radial fade on all edges */
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
+    /* Radial fade on all edges */
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
 
-  mask-image: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
+    mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
 }

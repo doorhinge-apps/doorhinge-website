@@ -1,17 +1,16 @@
 <div class="scroller-container">
     <div
-      class="scroll-content"
-      [ngStyle]="{
-        '--scroll-distance': scrollDistancePx + 'px',
-        '--scroll-duration': speed + 's'
-      }"
+        class="scroll-content"
+        [ngStyle]="{
+            '--scroll-distance': scrollDistancePx + 'px',
+            '--scroll-duration': speed + 's',
+        }"
     >
-      <!-- Render the repeated images -->
-      <img 
-        *ngFor="let img of repeatedImages"
-        [src]="img"
-        alt="Scrolling image"
-      />
+        <!-- Render the repeated images -->
+        <img
+            *ngFor="let img of repeatedImages"
+            [src]="img"
+            alt="Scrolling image"
+        />
     </div>
-  </div>
-  
+</div>

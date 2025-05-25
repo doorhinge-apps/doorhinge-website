@@ -1,8 +1,14 @@
+<app-gradient-lines class="stupidLines"></app-gradient-lines>
+<app-circles-gradient class="stupidCircles"></app-circles-gradient>
 <div class="mainBody">
     <div class="pageHeaderExternal">
         <div class="pageHeaderInternal">
             <div class="headerSpacer"></div>
-            <img src="Images/logo.png" alt="DoorHinge Apps Logo" class="headerImage">
+            <img
+                src="Images/logo.png"
+                alt="DoorHinge Apps Logo"
+                class="headerImage"
+            />
             <h1 class="headerTitle">DoorHinge Apps</h1>
         </div>
     </div>
@@ -10,94 +16,235 @@
     <div class="contentFullSection">
         <div class="contentFullBody">
             <h2 class="contentTitle">About Us</h2>
-            <p class="contentDescription">Hello everyone. We are DoorHinge apps, a pretty awesome software company. We
-                mainly work with iOS, iPadOS, and macOS app development. Our other projects are related to website
-                building
-                and Android development.</p>
+            <p class="contentDescription">
+                Hello everyone. We are DoorHinge apps, a pretty awesome software
+                company. We mainly work with iOS, iPadOS, and macOS app
+                development. Our other projects are related to website building
+                and Android development.
+            </p>
         </div>
     </div>
 
-
     <div class="grid-container">
         <div class="grid-item2">
-            <app-scrolling-apps-container class="scrollingApps"></app-scrolling-apps-container>
+            <app-scrolling-apps-container
+                class="scrollingApps"
+            ></app-scrolling-apps-container>
             <h2 class="overlay-text">Our Apps</h2>
         </div>
         <div class="grid-item">
             <h3 class="appTitle">Aura Browser</h3>
-            <img src="Images/App Icons/Aura.png" alt="Aura Browser Placeholder" class="tileImage">
-            <p class="appDescription">Aura is a web browser designed for iPad with additional support for iPhone, Mac,
-                and Vision Pro. The app is
-                designed as a customizable and open source alternative to Arc browser. The browser is currently
-                available in
-                beta. You can view the code and contribute on GitHub.</p>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/Aura.png"
+                    alt="Aura Browser Placeholder"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                Aura is a web browser designed for iPad with additional support
+                for iPhone, Mac, and Vision Pro. The app is designed as a
+                customizable and open source alternative to Arc browser. The
+                browser is currently available in beta. You can view the code
+                and contribute on GitHub.
+            </p>
 
             <div class="actionButtons">
-                <a href="https://testflight.apple.com/join/d6qMDVDH"  class="oneAction">Join Beta</a>
-                <a routerLink="/aura"  class="oneAction">Learn More</a>
+                <a
+                    href="https://testflight.apple.com/join/d6qMDVDH"
+                    class="oneAction"
+                    >Join Beta</a
+                >
+                <a routerLink="/apps/aura" class="oneAction">Learn More</a>
             </div>
         </div>
         <div class="grid-item">
             <h3 class="appTitle">DH Chat</h3>
-            <img src="Images/App Icons/DH Chat.png" alt="DH Chat Placeholder" class="tileImage">
-            <p class="appDescription">DH Chat is a messaging platform for groups. Our focus with this app was to create
-                a more powerful alternative
-                to GroupMe that maintains simplicity. It is essentially in between GroupMe and Discord. It is not
-                available
-                yet. When it is released, it will support iOS, Android, and Web.</p>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/DH Chat.png"
+                    alt="DH Chat Placeholder"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                DH Chat is a messaging platform for groups. Our focus with this
+                app was to create a more powerful alternative to GroupMe that
+                maintains simplicity. It is essentially in between GroupMe and
+                Discord. It is not available yet. When it is released, it will
+                support iOS, Android, and Web.
+            </p>
 
             <div class="actionButtons">
-                <a routerLink="/"  class="oneAction">Get Notified</a>
-                <a routerLink="/dh-chat"  class="oneAction">Learn More</a>
+                <a routerLink="/" class="oneAction">Get Notified</a>
+                <a routerLink="/apps/dh-chat" class="oneAction">Learn More</a>
             </div>
         </div>
-        <div class="grid-item" style="z-index: 10!important;">
+        <div class="grid-item" style="z-index: 10 !important">
             <h3 class="appTitle">SF Folder Icons</h3>
-            <img src="Images/App Icons/SF Folders.png" alt="SF Folder Icons Placeholder" class="tileImage">
-            <p class="appDescription">This is one of our simpler apps. It allows you to customize the folder icons on
-                your Mac. You can easily change the colors and add icons from a library of over 6000 symbols. You can
-                also upload your own images to create custom folder designs. It is available on the App Store for $0.99
-                or on GitHub for free.</p>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/SF Folders.png"
+                    alt="SF Folder Icons"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                This is one of our simpler apps. It allows you to customize the
+                folder icons on your Mac. You can easily change the colors and
+                add icons from a library of over 6000 symbols. You can also
+                upload your own images to create custom folder designs. It is
+                available on the App Store for $0.99 or on GitHub for free.
+            </p>
 
-                <div class="actionButtons">
-                    <div class="dropdown-container" #dropdown>
-                        <button class="oneAction dropdown-toggle" (click)="toggleDropdown($event)">
-                          Download
+            <div class="actionButtons">
+                <div class="dropdown-container" #dropdown>
+                    <div class="dropdown-container">
+                        <button
+                            class="oneAction dropdown-toggle"
+                            (click)="toggleDropdown('sf-folders', $event)"
+                        >
+                            Download
                         </button>
-                        <ul class="dropdown-menu" [class.show]="isOpen">
-                          <li><a class="dropdown-item" href="https://apps.apple.com/us/app/sf-symbols-folders/id6739956900">App Store</a></li>
-                          <li><a class="dropdown-item" href="https://github.com/CaedmonMyers/SF-Symbols-Folders/releases/latest">GitHub</a></li>
+
+                        <ul
+                            class="dropdown-menu"
+                            [class.show]="activeDropdown === 'sf-folders'"
+                        >
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="https://apps.apple.com/us/app/sf-symbols-folders/id6739956900"
+                                >
+                                    App Store
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="https://github.com/CaedmonMyers/SF-Symbols-Folders/releases/latest"
+                                >
+                                    GitHub
+                                </a>
+                            </li>
                         </ul>
-                      </div>
-                  
-                    <a routerLink="/sf-folders" class="oneAction">Learn More</a>
-                  </div>
-                                                    
+                    </div>
+                </div>
+
+                <a routerLink="/apps/sf-folders" class="oneAction"
+                    >Learn More</a
+                >
+            </div>
+        </div>
+        <div class="grid-item" style="z-index: 10 !important">
+            <h3 class="appTitle">Wallpaper Manager</h3>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/Wallpaper Manager.png"
+                    alt="Wallpaper Manager Icon"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                This app allows for simple management of wallpapers on displays
+                in macOS. It allows you to quickly set a wallpaper on an
+                individual display, create scenes to set the wallpaper on
+                multiple displays, and set a wallpaper across all desktops. It
+                also lets you edit your wallpapers by adding different effects.
+            </p>
+
+            <div class="actionButtons">
+                <div class="dropdown-container" #dropdown>
+                    <div class="dropdown-container">
+                        <button
+                            class="oneAction dropdown-toggle"
+                            (click)="toggleDropdown('wallpaper', $event)"
+                        >
+                            Download
+                        </button>
+
+                        <ul
+                            class="dropdown-menu"
+                            [class.show]="activeDropdown === 'wallpaper'"
+                        >
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="https://apps.apple.com/us/app/wallpaper‑manager/"
+                                >
+                                    App Store
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="https://github.com/CaedmonMyers/Wallpaper-Manager"
+                                >
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a routerLink="/apps/sf-folders" class="oneAction"
+                    >Learn More</a
+                >
+            </div>
         </div>
         <div class="grid-item">
             <h3 class="appTitle">CelsiUSA</h3>
-            <img src="Images/App Icons/CelsiUSA.png" alt="CelsiUSA Placeholder" class="tileImage">
-            <p class="appDescription">CelsiUSA is our app to help you switch from Fahrenheit to Celsius. While most of
-                the world is already using Celsius, the US still uses Fahrenheit. This app is designed to help you
-                switch to Celsius. The app displays temperature in metric, but simple gestures convert the measurements
-                to imperial units.</p>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/CelsiUSA.png"
+                    alt="CelsiUSA Placeholder"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                CelsiUSA is our app to help you switch from Fahrenheit to
+                Celsius. While most of the world is already using Celsius, the
+                US still uses Fahrenheit. This app is designed to help you
+                switch to Celsius. The app displays temperature in metric, but
+                simple gestures convert the measurements to imperial units.
+            </p>
 
             <div class="actionButtons">
-                <a href="https://apps.apple.com/in/app/celsiusa/id6449006027"  class="oneAction">Download</a>
-                <a routerLink="/celsiusa"  class="oneAction">Learn More</a>
+                <a
+                    href="https://apps.apple.com/in/app/celsiusa/id6449006027"
+                    class="oneAction"
+                    >Download</a
+                >
+                <a routerLink="/celsiusa" class="oneAction">Learn More</a>
             </div>
         </div>
         <div class="grid-item">
             <h3 class="appTitle">DH Parkour</h3>
-            <img src="Images/App Icons/DH Parkour.png" alt="DH Parkour Placeholder" class="tileImage">
-            <p class="appDescription">DoorHinge Parkour is our first app we developed. It is designed to teach you
-                parkour in simple progressions. Parkour is difficult to learn, but this app helps make it a bit easier
-                with videos and descriptions to walk you through skills. DoorHinge Parkour is the winner of the 2022
-                Congressional App Challenge for Oklahoma District 1.</p>
+            <div class="tileImageWrapper">
+                <img
+                    src="Images/App Icons/DH Parkour.png"
+                    alt="DH Parkour Placeholder"
+                    class="tileImage"
+                />
+            </div>
+            <p class="appDescription">
+                DoorHinge Parkour is our first app we developed. It is designed
+                to teach you parkour in simple progressions. Parkour is
+                difficult to learn, but this app helps make it a bit easier with
+                videos and descriptions to walk you through skills. DoorHinge
+                Parkour is the winner of the 2022 Congressional App Challenge
+                for Oklahoma District 1.
+            </p>
 
             <div class="actionButtons">
-                <a href="https://apps.apple.com/us/app/doorhinge-parkour/id1636750816" class="oneAction">Download</a>
-                <a href="https://doorhingeparkour.com"  class="oneAction">Learn More</a>
+                <a
+                    href="https://apps.apple.com/us/app/doorhinge-parkour/id1636750816"
+                    class="oneAction"
+                    >Download</a
+                >
+                <a href="https://doorhingeparkour.com" class="oneAction"
+                    >Learn More</a
+                >
             </div>
         </div>
     </div>
@@ -107,15 +254,12 @@
     <div class="contentFullSection">
         <div class="contentFullBody">
             <h2 class="contentTitle">About Us</h2>
-            <p class="contentDescription">Hello everyone. We are DoorHinge apps, a pretty awesome software company. We
-                mainly work with iOS, iPadOS, and macOS app development. Our other projects are related to website
-                building
-                and Android development.</p>
+            <p class="contentDescription">
+                Hello everyone. We are DoorHinge apps, a pretty awesome software
+                company. We mainly work with iOS, iPadOS, and macOS app
+                development. Our other projects are related to website building
+                and Android development.
+            </p>
         </div>
     </div>
 </div>
-
-
-
-<app-gradient-lines class="stupidLines"></app-gradient-lines>
-<app-circles-gradient class="stupidCircles"></app-circles-gradient>
