@@ -132,12 +132,62 @@ body {
 .auraImage {
     width: 30%;
     padding-right: 20px;
+    aspect-ratio: 3/2;
+}
+
+.subSection {
+
 }
 
 .sectionTitle {
     font-family: "Headland One", serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
-    font-size: 3vw;
+    /* font-size: 3vw; */
+    font-size: 30pt;
     color: white;
+}
+
+.sectionDescription {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    line-height: 200%;
+    color: white;
+}
+
+.horizontalContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.subSection {
+    flex: 1;
+}
+
+.auraImage {
+    width: 30%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    padding-right: 20px;
+}
+
+@media (max-width: 800px) {
+    .horizontalContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .auraImage {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    .subSection {
+        width: 90%;
+    }
 }

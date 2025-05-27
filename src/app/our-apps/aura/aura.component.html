@@ -9,7 +9,7 @@
                 s.colors[1] +
                 ')'
             "
-            [style.height]="s.height"
+            [style.height]="getHeight(s)"
             [style.clip-path]="s.clipPath"
             [style.z-index]="100 - i"
         >
@@ -20,13 +20,12 @@
             <div *ngIf="i === 0" class="fossilOverlay">
                 <!-- fourth section fossil overlay -->
                 <div class="blurCircle"></div>
-                <!-- <img src="/Images/Noise Circle.png" class="blurCircleImage"> -->
                 <img src="/Images/Grain.png" class="noise" />
 
                 <h1 class="neonderthaw-regular">Aura Browser</h1>
             </div>
 
-            <div *ngIf="i === 1" class="fossilOverlay">
+            <div *ngIf="i === 2" class="fossilOverlay">
                 <!-- fourth section fossil overlay -->
                 <div class="horizontalContent">
                     <img
@@ -34,9 +33,9 @@
                         class="auraImage"
                     />
 
-                    <div>
+                    <div class="subSection">
                         <h2 class="sectionTitle">Meet Aura</h2>
-                        <p>
+                        <p class="sectionDescription">
                             Aura is a browser designed for iPad, iPhone, Mac,
                             and Vision Pro. However, our main focus is bringing
                             a productive browsing experience to iPad. We do this
